@@ -336,5 +336,119 @@ section.call-conteiner .call-content {
 
 .call-content .btn-contato button{
     background-color: #0e8b60;
+    font-size: 20
+    px;
+}
+
+/*STEP BY STEP STYLE*/
+
+section.step-by-step {
+    padding: 60px 4%;
+}
+
+section.step-by-step .flex {
+    gap: 25px;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+.step-by-step h1{
+    text-align: center
+}
+
+.step-by-step h2{
+    text-align: center
+}
+
+.step-by-step .step {
+    width: 50%;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.step-by-step .step .step-number h4 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #0b4539;
+}
+
+.step-by-step .step .step-content h3 {
     font-size: 20px;
+    font-weight: 500;
+    color: #0b4539;
+}
+
+.step-by-step .step .step-content p {
+    font-size: 16px;
+    color: #05241f;
+}
+
+/* ESTILO FAQ */
+
+section.faq {
+    padding: 60px 4%;
+}
+
+.faq h1{
+    text-align: center
+}
+
+.faq h2{
+    text-align: center
+}
+
+.question {
+    width: 100%;
+    list-style: none;
+}
+
+.question li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.question li label {
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #0e8b5f59;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.question li label::before {
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.question input[type=radio] {
+    display: none;
+}
+
+.question .resposta {
+    color: #05241f;
+    padding: 10 14px;
+    line-height: 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s, padding .5s;
+}
+
+.question input[type=radio]:checked + label + .resposta{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.question input[type=radio]:checked + label::before {
+    content: '-';
 }
