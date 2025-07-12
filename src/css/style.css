@@ -254,3 +254,51 @@ section.about-us .flex {
 }
 
 /*ESTILO DO PORTFÓLIO*/
+
+section.portfolio {
+    padding: 60px 4%;
+}
+
+section.portfolio h1 {
+    margin-bottom: 10px;
+    color: #05241f;
+}
+
+section.portfolio p {
+    font-size: 18px;
+    color: #05241f;
+    margin-bottom: 40px;
+}
+
+section.portfolio .flex {
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio .portfolio-cards h3 {
+    font-size: 22px;
+    color: #0b4539;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+
+.portfolio .portfolio-cards p {
+    font-size: 15px;
+    color: #05241f;
+    text-align: center;
+}
+
+.portfolio .portfolio-cards .img-portfolio{
+    width: 288px;
+    height: 350px;
+    background-size: cover;
+    background-position: 100% 0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #00000042;
+    transition: 5s;
+}
+
+.portfolio .portfolio-cards .img-portfolio:hover{
+    background-position: 100% 100%;
+}
