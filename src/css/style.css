@@ -452,3 +452,17 @@ section.faq {
 .question input[type=radio]:checked + label::before {
     content: '-';
 }
+
+/* ESTILO DO FOOTER*/
+
+.line-footer {
+    background-color: #0b4539;
+    padding: 10px;
+}
+
+.line-footer p{
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
