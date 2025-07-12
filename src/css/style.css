@@ -38,6 +38,20 @@ body {
     transform: scale(1.05);
 }
 
+h1 {
+    font-size: 35px;
+    color: #05241f;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: -8px;
+    color: #0e8b60;
+    font-weight: 600;
+}
+
 /* ESTILO DO CABEÇALHO */
 
 header {
@@ -92,13 +106,15 @@ section.site-banner .flex {
     gap: 100px;
 }
 
-.site-banner h1 {
+.site-banner .txt-banner h1 {
     color: #FFF;
     font-size: 60px;
     line-height: 70px;
+    font-weight: 800;
+    margin-bottom: -10px;
 }
 
-.site-banner p {
+.site-banner .txt-banner p {
     color: #FFF;
     margin: 40px 0;
     font-size: 20px;
@@ -112,3 +128,129 @@ section.site-banner .flex {
 .site-banner .img-banner img{
     width: 500px;
 }
+
+/*ESTILO DOS SERVIÇOS*/
+
+section.solutions {
+    padding: 60px 4%;
+}
+
+section.solutions .flex {
+    gap: 40px;
+}
+
+.solutions h1 {
+    text-align: center;
+}
+
+.solutions h2 {
+    text-align: center;
+}
+
+.solutions .solution-card {
+    border: 2px solid #0b453981;
+    border-radius: 15px;
+    padding: 20px;
+    transition: .5s;
+    
+}
+
+.solutions .solution-card:hover {
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #00000027;
+}
+
+.solutions .solution-card img {
+    border-radius: 10px;
+}
+
+.solutions .solution-card h3 {
+    font-weight: 500;
+    font-size: 21px;
+    color: #0b4539;
+}
+
+.solutions .solution-card p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #05241f;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.solutions .solution-card .btn-contato  {
+    text-align: center;
+    background-color: 0e8b60;
+}
+
+.solution-card  .btn-contato button{
+    background-color: #0e8b60;
+}
+
+.solution-card button:hover {
+    box-shadow: 0px 0px 4px #0e8b60;
+}
+
+/*ESTILO DO ABOUT-US*/
+
+section.about-us {
+    padding: 60px 4%;
+}
+
+section.about-us .flex {
+    gap: 50px;
+}
+
+.about-us .about-us-container {
+    background-color: #f4f4f4;
+    padding: 20px 40px;
+    border-radius: 20px;
+    margin-left: 215px;
+}
+
+.about-us .about-us-container .about-us-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-us-container .about-us-content h1 {
+    margin-bottom: 15px;
+}
+
+.about-us-container .about-us-content p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #05241f;
+    margin: 5px 0;
+    text-align: justify;
+}
+
+.about-us-content .btn-contato button{
+    background-color: #0e8b60;
+    margin-top: 20px;
+}
+
+.about-us-container .about-us-image img{
+    margin-left: -215px;
+    margin-top: 15px;
+}
+
+/*ESTILO TAPE*/
+
+.tape-container {
+    padding: 10px 0;
+    margin: 30px 0;
+    background-color: #0e8b60; 
+    white-space: nowrap;
+    transform: rotate(1.5deg)
+}
+
+.tape-container  p {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*ESTILO DO PORTFÓLIO*/
