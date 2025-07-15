@@ -6,10 +6,12 @@
     font-family: 'poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FFF;
-    
-    height: 100vh;
 }
 
 ::-webkit-scrollbar{
@@ -49,14 +51,14 @@ body {
     transform: scale(1.05);
 }
 
-h1 {
+h2 {
     font-size: 35px;
     color: #05241f;
     font-weight: 500;
     margin-bottom: 50px;
 }
 
-h2 {
+h1 {
     font-size: 16px;
     margin-bottom: -8px;
     color: #0e8b60;
@@ -67,6 +69,10 @@ h2 {
 
 header {
     padding: 20px 4%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 header>.interface {
@@ -96,17 +102,26 @@ header nav ul {
 
 header nav.menu-desktop ul li {
     display: inline-block;
-    padding: 0 30px;
+    padding: 0 20px;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 15px;
+}
+
+/*EFEITO DE ROLAGEM*/
+
+header.fixed-header {
+    background-image: linear-gradient(to right, #4fab7c, #a7e18d);
+    padding: 6px 4%;
+    box-shadow: 0px 0px 10px #00000073;
+    transition: .5s;
+    z-index: 5;
 }
 
 /* ESTILO DO BANNER*/
 
 section.site-banner {
     padding: 130px 4% 25px 4%;
-    margin-top: -107px;
     background-image: linear-gradient(to right, #4fab7c, #a7e18d);
     border-radius: 0px 0px 30px 30px;
     height: 100vh;
@@ -119,7 +134,7 @@ section.site-banner .flex {
 }
 
 .site-banner .txt-banner {
-    width: 50%;
+    width: 55%;
 }
 
 .site-banner .txt-banner h1 {
@@ -142,7 +157,7 @@ section.site-banner .flex {
 }
 
 .site-banner .img-banner{
-    width: 50%;
+    width: 45%;
 }
 
 .site-banner .img-banner img{
@@ -234,7 +249,7 @@ section.about-us .flex {
     justify-content: center;
 }
 
-.about-us-container .about-us-content h1 {
+.about-us-container .about-us-content h2 {
     margin-bottom: 15px;
 }
 
@@ -279,7 +294,7 @@ section.portfolio {
     padding: 60px 4%;
 }
 
-section.portfolio h1 {
+section.portfolio h2 {
     margin-bottom: 10px;
     color: #05241f;
 }
@@ -336,14 +351,14 @@ section.call-conteiner .call-content {
     padding: 70px 150px;
 }
 
-.call-content h2 {
+.call-content h1 {
     font-size: 20px;
     font-weight: 500;
     color: #FFF;
     margin: 10px;
 }
 
-.call-content h1 {
+.call-content h2 {
     font-size: 35px;
     font-weight: 800;
     color: #FFF;
